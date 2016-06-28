@@ -1,0 +1,105 @@
+body {
+  margin:10px;
+  overflow: hidden;
+  background-image: url("../img/papel.jpg");
+  background-size: 100%;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#painelLogin{
+	position: absolute;
+	left: 40%;
+	top: 20%;
+	width: 400px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+#painelLogin .card{
+	height: 350px;
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+
+#painelCadastro .card{
+	-webkit-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+	box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.75);
+}
+#painelLogin input{
+	margin-left:-10px;
+}
+#canvas {
+    background-image: url("../img/paint.jpg");
+    background-size: 100% 100%;
+
+}
+#cabecalho{
+	height: 60px;
+	padding: 5px;
+}
+#cavecalho .chip{
+	padding: 5px;
+}
+.brand-logo img{
+	margin-top: -3px;
+	height: 50px;width: 50px;
+}
+#painelOpc{
+	position: absolute;
+	float: right;
+	top: 0px;
+	right: 0px;
+	width: 40%;
+}
+#btnOpc{
+	display: none;
+	padding: 5px;
+}
+#btnOpc li{
+	margin-top: 5px;
+}
+#paletaCores{
+	position: absolute;
+	width: 100%;
+	bottom: 0px;
+	display: none;
+}
+#formasPaint{
+	position: absolute;
+	top: 40%;
+	float: right;
+	right: 0px;
+	width: 300px;
+	display: none;
+}
+#formasPaint ul li{
+	display: inline;
+	padding: 5px;
+}
+#formasPaint button{
+	margin-top: 7px;
+	height: 50px;
+	width: 50px;
+	text-align: center;
+}
+#formasPaint .circulo{
+	border-radius: 50%;
+	background: #546e7a;
+	border: 5px solid #4caf50;
+}
+#formasPaint .bola{
+	border-radius: 50%;
+	background: #ff9800;
+}
+#painelURL{
+	margin-left: 5px;
+}
+#painelIMG ul li{
+	display: inline;
+	float: left;
+	margin-left: 5px;
+}

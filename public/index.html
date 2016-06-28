@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+	<link rel="stylesheet" type="text/css" href="/css/animate.css"></link>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css"></link>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+    <link rel="stylesheet" href="/css/materialize.min.css">
+
+	<script src="/script/angular.min.js"></script>
+	<!-- Firebase -->
+	<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+	<!-- AngularFire -->
+	<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+</head>
+<body>
+	<img src="/img/papel.jpg"/>
+	<div id="painelLogin">
+		<div class="row card  white ">
+		<div class="card-content teal ">
+			<img src="/img/logo.png" height="180" width="140" style="border-radius: 50px; margin-top:-90px; margin-left:-40px; margin-bottom: -40px;" />
+	      <span class="card-title" style="color:white;font-weight: bolder">Login</span>
+   		</div>
+		    <form class="col s12" method="post">
+		     	<div class="row">
+			        <div class="input-field col s12">
+			          <input id="myemail" type="email" class="validate">
+			          <label for="email">Email</label>
+			        </div>
+			        <br>
+			         <div class="input-field col s12">
+			          <input id="mysenha" type="password" class="validate">
+			          <label for="email">Senha</label>
+			        </div>
+			        <br>
+			        <input type="submit" class="btn" value="Logar" style="margin: 1px;" />
+			        <a href="cadastro.html" class="btn blue" style="margin-right: 18px; float: right; right: 0px;">Cadastrar</a>
+		        </div>
+		    </form>
+	    </div>
+	</div>
+</body>
+	<script src="http://172.20.21.47:3000/socket.io/socket.io.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="/script/index.js"></script>
+	<script type="text/javascript" src="/script/cores.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+</html>

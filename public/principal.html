@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>teste</title>
+	<link rel="stylesheet" type="text/css" href="/css/style.css"></link>
+	<link rel="stylesheet" type="text/css" href="/css/animate.css"></link>
+	<link rel="stylesheet" type="text/css" href="/css/bootstrap.css"></link>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"></link>
+    <link rel="stylesheet" href="/css/materialize.min.css">
+
+	<script src="/script/angular.min.js"></script>
+	<!-- Firebase -->
+	<script src="https://cdn.firebase.com/js/client/2.2.4/firebase.js"></script>
+	<!-- AngularFire -->
+	<script src="https://cdn.firebase.com/libs/angularfire/1.2.0/angularfire.min.js"></script>
+</head>
+<body ng-app="App">
+	<canvas id="canvas" height="500" width="800">
+	</canvas>
+		<div id="painelURL">
+			<ul>
+				<li style="width:30%"><input id="urlImg" class="form-control" value="" placeholder="Digite aqui a URL da imagem" /></li>
+				<li><input id="carregarImg" class="btn blue" type="submit" value="Carregar URL : " /></li>
+			</ul>
+		</div>
+		<div id="painelIMG">
+			<form method="post" enctype="multipart/form-data">
+				<ul>
+					<li><input name='image' type='file' class="btn blue"/></li>
+					<li><input id="carregarImgServer" name='but' type='submit' class="btn blue" value="Carregar Imagem" /></li>
+					<li><button id="limparTela" class="btn">Limpar</button></li>
+				</ul>
+			</form>
+		</div>
+
+	<div id="painelOpc">
+		<nav>
+		    <div class="nav-wrapper blue">
+		      <a href="#" class="brand-logo">
+		      	<img src="http://pt.seaicons.com/wp-content/uploads/2015/09/Marvin-Martian-icon-150x150.png">
+		      </a>
+		      <ul id="nav-mobile" class="right hide-on-med-and-down">
+		        <li id="menuOpc"><a>Menu</a></li>
+		        <li><a href="/">Sair</a></li>
+		      </ul>
+		    </div>
+	  	</nav>
+	  	<br>
+		<ul id="btnOpc" class="card blue-grey darken-1">
+			<li>
+				<ul>
+					<li><button id="lapis" class="btn">Lapis<i class="material-icons right">mode_edit</i></button></li>
+				</ul>
+			</li>
+			<li><button id="btnCores" class="btn blue">Cores<i class="material-icons right">picture_in_picture</i></button></li>
+			<li>
+				<ul>
+					<li><button id="btnFormas" class="btn green">Formas</button></li>
+			   </ul>
+			</li>   
+		</ul>
+	</div>
+
+	<div id="paletaCores">
+		<div id="mydiv"></div>
+		<span id="textcolor" style="display: none"></span>
+	</div>
+
+	<div id="formasPaint" class="card blue-grey darken-1">
+		<ul>
+			<li><button id="circulo" class="btn circulo"></button></li>
+			<li><button id="preenche" class="btn bola"></button></li>
+		</ul>
+	</div>
+	
+	<script src="http://172.20.21.47:3000/socket.io/socket.io.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.1.js"></script>
+	<script type="text/javascript" src="/script/index.js"></script>
+	<script type="text/javascript" src="/script/cores.js"></script>
+</body>
+</html>
